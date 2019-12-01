@@ -1,10 +1,10 @@
 'use strict'
-const setupDatabase = require('./lib/db')
-const setupMetricModel = require('./models/metric')
-const setupAgentModel = require('./models/agent')
-const setupConfigTestDb = require('./tests/helpers')
-const AgentController = require('./controlers/agent.ctrl')
-const MetricController = require('./controlers/metric.ctrl')
+const setupDatabase = require('./src/lib/db')
+const setupMetricModel = require('./src/models/metric')
+const setupAgentModel = require('./src/models/agent')
+const setupConfigTestDb = require('./src/tests/helpers')
+const AgentController = require('./src/controlers/agent.ctrl')
+const MetricController = require('./src/controlers/metric.ctrl')
 module.exports = async (config) => {
   // si config no esta definido es necesario configurar una
   // de pruebas
